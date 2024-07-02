@@ -1,0 +1,53 @@
+.tierContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto 0 auto;
+    width: 50%;
+}
+
+/* Style for the labels */
+.tierLabel {
+    padding: 5px 15px;
+    text-align: center;
+    border: 5px solid red;
+    color: red;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+
+.tierLabel:hover {
+    box-shadow: 0 0 5px white;
+}
+
+/* Style for the selected label */
+.selectedTierLabel {
+    border: 5px solid blue;
+    color: blue;
+}
+
+
+.confirmationButton {
+    width: 40px;
+    height: 40px;
+    background-color: #0056b3;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirmationButton:hover {
+    background-color: #3977ba;
+}
+
+.confirmationButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}

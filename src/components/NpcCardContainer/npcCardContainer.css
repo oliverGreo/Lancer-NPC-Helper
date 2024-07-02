@@ -1,0 +1,13 @@
+.npcCardContainer {
+  display: flex;
+  flex-flow: row;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+}
+
+.npcCardContainer>* {
+  flex: 0 0 99.3%;
+  scroll-snap-align: center;
+}

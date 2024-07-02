@@ -1,0 +1,719 @@
+[
+  {
+    "id": 1,
+    "name": "Mock Ace",
+    "statsTier1": {
+      "mechskills": {
+        "hull": -1,
+        "agility": 1,
+        "systems": 2,
+        "engineering": 7
+      },
+      "corestats": {
+        "hp": 110,
+        "evasion": 122,
+        "speed": 15,
+        "heatCap": 82,
+        "sensors": 101,
+        "armor": 10,
+        "e-Defense": 1,
+        "size": 19,
+        "saveTarget": 310
+      }
+    },
+    "statsTier2": {
+      "mechskills": {
+        "hull": -21,
+        "agility": 14,
+        "systems": 24,
+        "engineering": 187
+      },
+      "corestats": {
+        "hp": 187,
+        "evasion": 153,
+        "speed": 66,
+        "heatcap": 48,
+        "sensors": 170,
+        "armor": 12,
+        "edefense": 81,
+        "size": 3,
+        "savetarget": 122
+      }
+    },
+    "statsTier3": {
+      "mechskills": {
+        "hull": -12,
+        "agility": 26,
+        "systems": 43,
+        "engineering": 16
+      },
+      "corestats": {
+        "hp": 141,
+        "evasion": 128,
+        "speed": 37,
+        "heatcap": 87,
+        "sensors": 160,
+        "armor": 40,
+        "edefense": 510,
+        "size": 16,
+        "savetarget": 414
+      }
+    },
+    "tactics": "This is the tactic description. It tells us cool things about this npc. It can fight well, or maybe it is into arts and crafts, who knows? Lorem ipsum carbs.",
+    "mandatorySystems": [
+      {
+        "name": "Mock System Alpha",
+        "tags": "System",
+        "isReaction": false,
+        "isWeapon": false,
+        "description": "This is the first system, hence the name."
+      },
+      {
+        "name": "Mock System 2",
+        "tags": "Main Butterknife, Sharp, Greasy, +1/+2/+3",
+        "reactionTrigger": null,
+        "isWeapon": true,
+        "description": "[Range 1] [Area 1] [4/6/8 butter damage]"
+      },
+      {
+        "name": "Mock Reaction System",
+        "tags": "Reaction, Trait, Recharge: 15+",
+        "isWeapon": false,
+        "reactionTrigger": "The trigger ABC happenend.",
+        "description": "The NPC can react with this reaction, how cool is that?! Yippie!"
+      }
+    ],
+    "optionalSystems": [
+      {
+        "name": "Optional System ONE",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional, and can be chosen in addition to the mandatory systems. They add flavor and cool abilities. Noice."
+      },
+      {
+        "name": "Mock Optiional Reaction System",
+        "tags": "Reaction, Trait, Recharge: 115+",
+        "isWeapon": false,
+        "reactionTrigger": "The trigger ABC happenend, but this time it's optional.",
+        "description": "The NPC can react with this reaction if chosen, so you better choose it."
+      },
+      {
+        "name": "Optional System Three",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text ."
+      },
+      {
+        "name": "Optional System Four",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text hallo."
+      },
+      {
+        "name": "Optional System 5",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text 5 5 5 5 5 5 5."
+      },
+      {
+        "name": "Optional System six",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text last one."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Mock Archer",
+    "statsTier1": {
+      "mechskills": {
+        "hull": -1,
+        "agility": 1,
+        "systems": 2,
+        "engineering": 7
+      },
+      "corestats": {
+        "hp": 110,
+        "evasion": 122,
+        "speed": 15,
+        "heatCap": 82,
+        "sensors": 101,
+        "armor": 10,
+        "e-Defense": 1,
+        "size": 19,
+        "saveTarget": 310
+      }
+    },
+    "statsTier2": {
+      "mechskills": {
+        "hull": -21,
+        "agility": 14,
+        "systems": 24,
+        "engineering": 187
+      },
+      "corestats": {
+        "hp": 187,
+        "evasion": 153,
+        "speed": 66,
+        "heatcap": 48,
+        "sensors": 170,
+        "armor": 12,
+        "edefense": 81,
+        "size": 3,
+        "savetarget": 122
+      }
+    },
+    "statsTier3": {
+      "mechskills": {
+        "hull": -12,
+        "agility": 26,
+        "systems": 43,
+        "engineering": 16
+      },
+      "corestats": {
+        "hp": 141,
+        "evasion": 128,
+        "speed": 37,
+        "heatcap": 87,
+        "sensors": 160,
+        "armor": 40,
+        "edefense": 510,
+        "size": 16,
+        "savetarget": 414
+      }
+    },
+    "tactics": "This is the tactic description. It tells us cool things about this npc. It can fight well, or maybe it is into arts and crafts, who knows? Lorem ipsum carbs.",
+    "mandatorySystems": [
+      {
+        "name": "Mock System Alpha",
+        "tags": "System",
+        "isReaction": false,
+        "isWeapon": false,
+        "description": "This is the first system, hence the name."
+      },
+      {
+        "name": "Mock System 2",
+        "tags": "Main Butterknife, Sharp, Greasy, +1/+2/+3",
+        "reactionTrigger": null,
+        "isWeapon": true,
+        "description": "[Range 1] [Area 1] [4/6/8 butter damage]"
+      },
+      {
+        "name": "Mock Reaction System",
+        "tags": "Reaction, Trait, Recharge: 15+",
+        "isWeapon": false,
+        "reactionTrigger": "The trigger ABC happenend.",
+        "description": "The NPC can react with this reaction, how cool is that?! Yippie!"
+      }
+    ],
+    "optionalSystems": [
+      {
+        "name": "Optional System ONE",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional, and can be chosen in addition to the mandatory systems. They add flavor and cool abilities. Noice."
+      },
+      {
+        "name": "Mock Optiional Reaction System",
+        "tags": "Reaction, Trait, Recharge: 115+",
+        "isWeapon": false,
+        "reactionTrigger": "The trigger ABC happenend, but this time it's optional.",
+        "description": "The NPC can react with this reaction if chosen, so you better choose it."
+      },
+      {
+        "name": "Optional System Three",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text ."
+      },
+      {
+        "name": "Optional System Four",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text hallo."
+      },
+      {
+        "name": "Optional System 5",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text 5 5 5 5 5 5 5."
+      },
+      {
+        "name": "Optional System six",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text last one."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mock Ambush",
+    "statsTier1": {
+      "mechskills": {
+        "hull": -1,
+        "agility": 1,
+        "systems": 2,
+        "engineering": 7
+      },
+      "corestats": {
+        "hp": 110,
+        "evasion": 122,
+        "speed": 15,
+        "heatCap": 82,
+        "sensors": 101,
+        "armor": 10,
+        "e-Defense": 1,
+        "size": 19,
+        "saveTarget": 310
+      }
+    },
+    "statsTier2": {
+      "mechskills": {
+        "hull": -21,
+        "agility": 14,
+        "systems": 24,
+        "engineering": 187
+      },
+      "corestats": {
+        "hp": 187,
+        "evasion": 153,
+        "speed": 66,
+        "heatcap": 48,
+        "sensors": 170,
+        "armor": 12,
+        "edefense": 81,
+        "size": 3,
+        "savetarget": 122
+      }
+    },
+    "statsTier3": {
+      "mechskills": {
+        "hull": -12,
+        "agility": 26,
+        "systems": 43,
+        "engineering": 16
+      },
+      "corestats": {
+        "hp": 141,
+        "evasion": 128,
+        "speed": 37,
+        "heatcap": 87,
+        "sensors": 160,
+        "armor": 40,
+        "edefense": 510,
+        "size": 16,
+        "savetarget": 414
+      }
+    },
+    "tactics": "This is the tactic description. It tells us cool things about this npc. It can fight well, or maybe it is into arts and crafts, who knows? Lorem ipsum carbs.",
+    "mandatorySystems": [
+      {
+        "name": "Mock System Alpha",
+        "tags": "System",
+        "isReaction": false,
+        "isWeapon": false,
+        "description": "This is the first system, hence the name."
+      },
+      {
+        "name": "Mock System 2",
+        "tags": "Main Butterknife, Sharp, Greasy, +1/+2/+3",
+        "reactionTrigger": null,
+        "isWeapon": true,
+        "description": "[Range 1] [Area 1] [4/6/8 butter damage]"
+      },
+      {
+        "name": "Mock Reaction System",
+        "tags": "Reaction, Trait, Recharge: 15+",
+        "isWeapon": false,
+        "reactionTrigger": "The trigger ABC happenend.",
+        "description": "The NPC can react with this reaction, how cool is that?! Yippie!"
+      }
+    ],
+    "optionalSystems": [
+      {
+        "name": "Optional System ONE",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional, and can be chosen in addition to the mandatory systems. They add flavor and cool abilities. Noice."
+      },
+      {
+        "name": "Mock Optiional Reaction System",
+        "tags": "Reaction, Trait, Recharge: 115+",
+        "isWeapon": false,
+        "reactionTrigger": "The trigger ABC happenend, but this time it's optional.",
+        "description": "The NPC can react with this reaction if chosen, so you better choose it."
+      },
+      {
+        "name": "Optional System Three",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text ."
+      },
+      {
+        "name": "Optional System Four",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text hallo."
+      },
+      {
+        "name": "Optional System 5",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text 5 5 5 5 5 5 5."
+      },
+      {
+        "name": "Optional System six",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text last one."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Mock Avatar",
+    "statsTier1": {
+      "mechskills": {
+        "hull": -1,
+        "agility": 1,
+        "systems": 2,
+        "engineering": 7
+      },
+      "corestats": {
+        "hp": 110,
+        "evasion": 122,
+        "speed": 15,
+        "heatCap": 82,
+        "sensors": 101,
+        "armor": 10,
+        "e-Defense": 1,
+        "size": 19,
+        "saveTarget": 310
+      }
+    },
+    "statsTier2": {
+      "mechskills": {
+        "hull": -21,
+        "agility": 14,
+        "systems": 24,
+        "engineering": 187
+      },
+      "corestats": {
+        "hp": 187,
+        "evasion": 153,
+        "speed": 66,
+        "heatcap": 48,
+        "sensors": 170,
+        "armor": 12,
+        "edefense": 81,
+        "size": 3,
+        "savetarget": 122
+      }
+    },
+    "statsTier3": {
+      "mechskills": {
+        "hull": -12,
+        "agility": 26,
+        "systems": 43,
+        "engineering": 16
+      },
+      "corestats": {
+        "hp": 141,
+        "evasion": 128,
+        "speed": 37,
+        "heatcap": 87,
+        "sensors": 160,
+        "armor": 40,
+        "edefense": 510,
+        "size": 16,
+        "savetarget": 414
+      }
+    },
+    "tactics": "This is the tactic description. It tells us cool things about this npc. It can fight well, or maybe it is into arts and crafts, who knows? Lorem ipsum carbs.",
+    "mandatorySystems": [
+      {
+        "name": "Mock System Alpha",
+        "tags": "System",
+        "isReaction": false,
+        "isWeapon": false,
+        "description": "This is the first system, hence the name."
+      },
+      {
+        "name": "Mock System 2",
+        "tags": "Main Butterknife, Sharp, Greasy, +1/+2/+3",
+        "reactionTrigger": null,
+        "isWeapon": true,
+        "description": "[Range 1] [Area 1] [4/6/8 butter damage]"
+      },
+      {
+        "name": "Mock Reaction System",
+        "tags": "Reaction, Trait, Recharge: 15+",
+        "isWeapon": false,
+        "reactionTrigger": "The trigger ABC happenend.",
+        "description": "The NPC can react with this reaction, how cool is that?! Yippie!"
+      }
+    ],
+    "optionalSystems": [
+      {
+        "name": "Optional System ONE",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional, and can be chosen in addition to the mandatory systems. They add flavor and cool abilities. Noice."
+      },
+      {
+        "name": "Mock Optiional Reaction System",
+        "tags": "Reaction, Trait, Recharge: 115+",
+        "isWeapon": false,
+        "reactionTrigger": "The trigger ABC happenend, but this time it's optional.",
+        "description": "The NPC can react with this reaction if chosen, so you better choose it."
+      },
+      {
+        "name": "Optional System Three",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text ."
+      },
+      {
+        "name": "Optional System Four",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text hallo."
+      },
+      {
+        "name": "Optional System 5",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text 5 5 5 5 5 5 5."
+      },
+      {
+        "name": "Optional System six",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text last one."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mock Aegis",
+    "statsTier1": {
+      "mechskills": {
+        "hull": -1,
+        "agility": 1,
+        "systems": 2,
+        "engineering": 7
+      },
+      "corestats": {
+        "hp": 110,
+        "evasion": 122,
+        "speed": 15,
+        "heatCap": 82,
+        "sensors": 101,
+        "armor": 10,
+        "e-Defense": 1,
+        "size": 19,
+        "saveTarget": 310
+      }
+    },
+    "statsTier2": {
+      "mechskills": {
+        "hull": -21,
+        "agility": 14,
+        "systems": 24,
+        "engineering": 187
+      },
+      "corestats": {
+        "hp": 187,
+        "evasion": 153,
+        "speed": 66,
+        "heatcap": 48,
+        "sensors": 170,
+        "armor": 12,
+        "edefense": 81,
+        "size": 3,
+        "savetarget": 122
+      }
+    },
+    "statsTier3": {
+      "mechskills": {
+        "hull": -12,
+        "agility": 26,
+        "systems": 43,
+        "engineering": 16
+      },
+      "corestats": {
+        "hp": 141,
+        "evasion": 128,
+        "speed": 37,
+        "heatcap": 87,
+        "sensors": 160,
+        "armor": 40,
+        "edefense": 510,
+        "size": 16,
+        "savetarget": 414
+      }
+    },
+    "tactics": "This is the tactic description. It tells us cool things about this npc. It can fight well, or maybe it is into arts and crafts, who knows? Lorem ipsum carbs.",
+    "mandatorySystems": [
+      {
+        "name": "Mock System Alpha",
+        "tags": "System",
+        "isReaction": false,
+        "isWeapon": false,
+        "description": "This is the first system, hence the name."
+      },
+      {
+        "name": "Mock System 2",
+        "tags": "Main Butterknife, Sharp, Greasy, +1/+2/+3",
+        "reactionTrigger": null,
+        "isWeapon": true,
+        "description": "[Range 1] [Area 1] [4/6/8 butter damage]"
+      },
+      {
+        "name": "Mock Reaction System",
+        "tags": "Reaction, Trait, Recharge: 15+",
+        "isWeapon": false,
+        "reactionTrigger": "The trigger ABC happenend.",
+        "description": "The NPC can react with this reaction, how cool is that?! Yippie!"
+      }
+    ],
+    "optionalSystems": [
+      {
+        "name": "Optional System ONE",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional, and can be chosen in addition to the mandatory systems. They add flavor and cool abilities. Noice."
+      },
+      {
+        "name": "Mock Optiional Reaction System",
+        "tags": "Reaction, Trait, Recharge: 115+",
+        "isWeapon": false,
+        "reactionTrigger": "The trigger ABC happenend, but this time it's optional.",
+        "description": "The NPC can react with this reaction if chosen, so you better choose it."
+      },
+      {
+        "name": "Optional System Three",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text ."
+      },
+      {
+        "name": "Optional System Four",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text hallo."
+      },
+      {
+        "name": "Optional System 5",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text 5 5 5 5 5 5 5."
+      },
+      {
+        "name": "Optional System six",
+        "tags": "System, Limited 31, Free Action, 11/round",
+        "isWeapon": false,
+        "reactionTrigger": null,
+        "description": "This is optional as well, more text more text more text more text more text more text more text last one."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Mock no data"
+  },
+  {
+    "id": 14,
+    "name": "Mock no data"
+  },
+  {
+    "id": 15,
+    "name": "Mock no data"
+  },
+  {
+    "id": 16,
+    "name": "Mock no data"
+  },
+  {
+    "id": 17,
+    "name": "Mock no data"
+  },
+  {
+    "id": 18,
+    "name": "Mock no data"
+  },
+  {
+    "id": 19,
+    "name": "Mock no data"
+  },
+  {
+    "id": 20,
+    "name": "Mock no data"
+  },
+  {
+    "id": 21,
+    "name": "Mock no data"
+  },
+  {
+    "id": 22,
+    "name": "Mock no data"
+  },
+  {
+    "id": 23,
+    "name": "Mock no data"
+  },
+  {
+    "id": 24,
+    "name": "Mock no data"
+  },
+  {
+    "id": 25,
+    "name": "Mock no data"
+  },
+  {
+    "id": 26,
+    "name": "Mock no data"
+  },
+  {
+    "id": 27,
+    "name": "Mock no data"
+  },
+  {
+    "id": 28,
+    "name": "Mock no data"
+  },
+  {
+    "id": 29,
+    "name": "Mock no data"
+  },
+  {
+    "id": 30,
+    "name": "Mock no data"
+  }
+]

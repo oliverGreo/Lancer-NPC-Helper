@@ -1,0 +1,31 @@
+.npcLabelContainer {
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto 20px auto;
+}
+
+.npcLabel {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.npcLabel:hover {
+    background-color: green;
+}
+
+.npcChosen {
+    background-color: lightgray;
+    color: black;
+}
+
+.npcChosen:hover {
+    background-color: beige;
+    color: black;
+}
