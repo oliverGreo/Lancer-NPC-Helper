@@ -25,12 +25,7 @@ const NpcCard = (props) => {
     };
 
 
-
     const tieredStats = tier === 'tier1' ? npc.statsTier1 : tier === 'tier2' ? npc.statsTier2 : npc.statsTier3
-
-    console.log(tier)
-    console.log('tieredStats', tieredStats)
-
 
     const activeSystems = []
     const inactiveSystems = []
