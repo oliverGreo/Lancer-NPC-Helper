@@ -16,7 +16,7 @@
         "heatCap": 82,
         "sensors": 101,
         "armor": 10,
-        "e-Defense": 1,
+        "eDefense": 11,
         "size": 19,
         "saveTarget": 310
       }
@@ -145,7 +145,7 @@
         "heatCap": 82,
         "sensors": 101,
         "armor": 10,
-        "e-Defense": 1,
+        "eDefense": 11,
         "size": 19,
         "saveTarget": 310
       }
@@ -274,7 +274,7 @@
         "heatCap": 82,
         "sensors": 101,
         "armor": 10,
-        "e-Defense": 1,
+        "eDefense": 11,
         "size": 19,
         "saveTarget": 310
       }
@@ -403,7 +403,7 @@
         "heatCap": 82,
         "sensors": 101,
         "armor": 10,
-        "e-Defense": 1,
+        "eDefense": 11,
         "size": 19,
         "saveTarget": 310
       }
@@ -532,7 +532,7 @@
         "heatCap": 82,
         "sensors": 101,
         "armor": 10,
-        "e-Defense": 1,
+        "eDefense": 11,
         "size": 19,
         "saveTarget": 310
       }

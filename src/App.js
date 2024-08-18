@@ -1,10 +1,11 @@
-import NpcCardContainer from "./components/NpcCardContainer/npcCardContainer"
-import NpcLabelContainer from "./components/NpcLabelContainer/npcLabelContainer"
-import TierButtonContainer from "./components/TierButtonContainer/tierButtonContainer"
+
 import Header from "./components/Header/header"
 import "./App.css"
 import data from "./mockLancerNpcs.json"
 import { useState } from "react"
+import NpcLabelContainer from "./components/NpcLabelContainer/npcLabelContainer"
+import TierButtonContainer from "./components/TierButtonContainer/tierButtonContainer"
+import NpcCardContainer from "./components/NpcCardContainer/npcCardContainer"
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
           </>
         ) : (
           <NpcCardContainer npcs={pickedNpcArray} tier={selectedTier} />
+
         )
         }
       </div >

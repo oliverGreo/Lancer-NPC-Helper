@@ -1,103 +1,36 @@
 .npcCard {
-    border: 3px solid black;
-    border-radius: 15px;
-    background-color: #B19470;
-    /* transition: all 0.2s ease; */
-}
-
-
-/* .npcCard:hover {
-    background-color: #F8FAE5;
-    color: black;
-    box-shadow: 0 0 10px 5px white;
-} */
-
-.npcCard * {
-    transition: all 0.2s ease;
+    margin-top: 5px;
+    outline: 3px solid black;
+    border-radius: 35px;
+    background-color: #e0b889;
 }
 
 /* Label for the name of the npc */
 .nameBox {
     background-color: rgb(239, 209, 142);
+    box-shadow: 3px 3px grey;
+    border: 2px solid black;
+    border-radius: 15px;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     padding: 15px;
-    margin: 30px;
-    box-shadow: 3px 3px grey;
-}
-
-/* container for skills and stats + their labels */
-.container {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 15px 25px;
-    margin: 0 auto 10px auto;
-    transition: all 0.2s ease-in-out;
-    border-radius: 15px;
-    font-size: large;
-    width: 80%;
-}
-
-
-/* .container:hover {
-    background-color: #43766C;
-    color: white;
-} */
-
-.npcCard>.label {
-    padding: 0 0 5px 80px;
+    margin: 30px 10vw;
 }
 
 /* labels for the tables */
-.label {
+.infoLabel {
     font-size: x-large;
     font-weight: bolder;
     color: white;
+    padding: 10px;
 }
 
-/* .labelContainer.hover {
-    background-color: #B19470;
-    color: white;
-} */
-
-
-.stat {
-    /* outline: 1px solid green; */
-    padding: 5px;
-    /* margin: 0 0 15px 10px; */
-}
-
-.statLabel {
-    background-color: lightgrey;
-    padding: 3px;
-    clip-path: polygon(10px 0,
-            100% 0,
-            100% 100%,
-            0 100%,
-            0 20%)
-}
-
-.statValue {
-    background-color: white;
-    border: 1px solid grey;
-    font-weight: bold;
-    padding: 2px 4px;
-    clip-path: polygon(30% 0,
-            100% 0,
-            100% 70%,
-            70% 100%,
-            0 100%,
-            0 30%)
-}
-
-.tacticsContainer {
-    text-align: justify;
-    display: block;
-}
-
-.tacticsContainer>* {
-    padding-bottom: 15px;
+@media (min-width: 610px) {
+    .npcTableContainer {
+        width: 85%;
+        margin: 0 auto;
+    }
 }
 
 /* container for systems */
@@ -111,31 +44,9 @@
     width: 90%;
 }
 
-@media (max-width: 1300px) {
-
-    .mechSkillsContainer,
-    .coreStatsContainer {
-        display: inline-block;
-        width: 35%;
-        vertical-align: top;
-    }
-
-
-    .coreStatsContainer>*:first-child,
-    .mechSkillsContainer>*:first-child {
-        /* outline: 1px solid red; */
-        margin-bottom: 20px;
-    }
-
-
-    .coreStatsContainer hr {
-        /* outline: 1px solid red; */
-        border-radius: 50%;
-        width: 50%;
-        margin-right: 50%;
-    }
-
-    .coreStatsContainer {
-        margin: 0 0 0 15%;
+/* smartphone */
+@media (max-width: 860px) {
+    .systemContainer {
+        grid-template-columns: 1fr;
     }
 }

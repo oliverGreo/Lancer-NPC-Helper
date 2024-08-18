@@ -3,16 +3,15 @@ import './npcLabelContainer.css'
 
 
 const NpcLabelContainer = (props) => {
-    const { pickedNpcs, data, handleNpcChoice } = props
+    const { data, pickedNpcs, handleNpcChoice } = props
 
     return (
-
         <div className="npcLabelContainer">
             {
-                data.map((entry) => (
+                data.map((entry, index) => (
                     <div
                         className={pickedNpcs.includes(entry.name) ? 'npcLabel npcChosen' : 'npcLabel'}
-                        key={entry.id}
+                        key={index}
                         onClick={() => handleNpcChoice(entry.name)}
                     >
                         {entry.name}
@@ -20,9 +19,8 @@ const NpcLabelContainer = (props) => {
                 ))
             }
         </div>
-
     )
-};
+}
 
-export default NpcLabelContainer;
+export default NpcLabelContainer
 

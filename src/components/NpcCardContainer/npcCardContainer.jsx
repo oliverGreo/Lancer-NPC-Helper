@@ -8,8 +8,8 @@ const NpcCardContainer = (props) => {
     return (
         <div className='npcCardContainer'>
             {
-                npcs.map((npc) => (
-                    <NpcCard key={npc.id} npc={npc} tier={tier} />
+                npcs.map((npc, index) => (
+                    <NpcCard key={index} npc={npc} tier={tier} />
                 ))
             }
         </div>

@@ -16,7 +16,7 @@ const Header = (props) => {
             </div>
             <div className={menuIsOpen ? 'burgerMenu open' : 'burgerMenu'}>
                 {/* display all tiers?  */}
-                {props.data.map(entry => <div className='burgerMenuEntry' onClick={() => alert('This does nothing lmao')}>{entry.name}</div>)}
+                {props.data.map((entry, index) => <div key={index} className='burgerMenuEntry' onClick={() => alert('This does nothing lmao')}>{entry.name}</div>)}
             </div>
         </div >
 

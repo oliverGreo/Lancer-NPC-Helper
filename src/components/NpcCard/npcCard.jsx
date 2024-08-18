@@ -1,29 +1,11 @@
-import React from 'react'
-import './npcCard.css'
+import React, { useState } from 'react'
 import System from '../System/system'
-import { useState } from "react"
+import TableContainer from '../TableContainer/tableContainer'
+import './npcCard.css'
 
 const NpcCard = (props) => {
     const { npc, tier } = props
     const [activeSystemNames, setActiveSystemNames] = useState([])
-
-
-    const formatPropertyName = (name) => {
-        const words = name.split(/(?=[A-Z-])/)
-        const capitalizedWords = words.map((word, index) => {
-            if (word.toLowerCase() === 'hp') {
-                return 'HP'
-            }
-            if (word === '-') {
-                return '-'
-            }
-            const spaceBefore = index === 0 || words[index - 1] === '-';
-            const spaceAfter = index === words.length - 1 || words[index + 1] === '-';
-            return (spaceBefore ? '' : ' ') + word.charAt(0).toUpperCase() + word.slice(1) + (spaceAfter ? '' : ' ')
-        })
-        return capitalizedWords.join('')
-    };
-
 
     const tieredStats = tier === 'tier1' ? npc.statsTier1 : tier === 'tier2' ? npc.statsTier2 : npc.statsTier3
 
@@ -52,79 +34,38 @@ const NpcCard = (props) => {
         }
     }
 
-
     return (
         <div className="npcCard">
             <div className='nameBox'>{npc.name}</div>
-            {/* ============================= Core Stats */}
-            <div className="container coreStatsContainer">
-                <div className="label">
-                    CORE STATS
-                </div>
-                <div>
-                    {Object.entries(tieredStats.corestats).map(([stat, value]) => (
-                        <>
-                            <div key={stat} className='stat'>
-                                <span className='statLabel'>{formatPropertyName(stat)}:</span>
-                                <span className='statValue'>{value}</span>
-                            </div>
-                        </>
-                    ))}
-                </div>
+            <div className='npcTableContainer'>
+                <TableContainer mechStats={tieredStats.corestats} mechSkills={tieredStats.mechskills} />
             </div>
-            {/* ============================= Mech Skills */}
-            <div className="container mechSkillsContainer">
-                <div className="label">
-                    MECH SKILLS
-                </div>
-                <div>
-                    {Object.entries(tieredStats.mechskills).map(([skill, value]) => (
-                        <>
-                            {/* <hr /> */}
-                            <div key={skill} className="stat">
-                                <span className='statLabel'>{formatPropertyName(skill)}:</span>
-                                <span className='statValue'>{value}</span>
-                            </div>
-                        </>
-                    ))}
-                </div>
-            </div>
-
-            {/* ============================= Tactics
-            <div className='container tacticsContainer'>
-                <div className="label">
-                    TACTICS
-                </div>
-                <div>
-                    {npc.tactics}
-                </div>
-            </div> */}
             {/* ============================= Systems */}
             {/* ============== Base Systems */}
             <div className='container labelContainer'>
-                <div className="label">
+                <div className="infoLabel">
                     BASE SYSTEMS
                 </div>
             </div>
             <div className='systemContainer'>
-                {npc.mandatorySystems.map((system) =>
-                    <System key={Math.random()} system={system} isActive={true} toggleSystem={() => { }} />
+                {npc.mandatorySystems.map((system, index) =>
+                    <System key={index} system={system} isActive={true} toggleSystem={() => { }} />
                 )}
             </div>
             {/* ============== Optional Systems */}
             <div className='container labelContainer'>
-                <div className="label">
+                <div className="infoLabel">
                     OPTIONAL SYSTEMS
                 </div>
             </div>
             <div className={'systemContainer'}>
-                {activeSystems.map((system) =>
-                    <System key={Math.random()} system={system} toggleSystem={() => setSystemInactive(system.name)} isActive={true} />
+                {activeSystems.map((system, index) =>
+                    <System key={index} system={system} toggleSystem={(name) => setSystemInactive(name)} isActive={true} />
                 )}
             </div >
             <div className={'systemContainer'}>
-                {inactiveSystems.map((system) =>
-                    <System key={Math.random()} system={system} toggleSystem={() => setSystemActive(system.name)} isActive={false} />
+                {inactiveSystems.map((system, index) =>
+                    <System key={index} system={system} toggleSystem={(name) => setSystemActive(name)} isActive={false} />
                 )}
 
             </div >
